@@ -25,7 +25,7 @@ import (
 
 const (
 	//SysAuthFinalizer name of the sysauth finalizer
-	SysAuthFinalizer = "sysauth.finalizers.vault.gobins.github.io"
+	SysAuthFinalizer = "sysauth.finalizers.vault.redoute.io"
 	//WatchNamespace name of the namespace on which the controller is operating
 	WatchNamespace = "vault-controller-system"
 	//SysAuthFailedState state when failed

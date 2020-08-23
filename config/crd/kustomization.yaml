@@ -2,8 +2,8 @@
 # since it depends on service name and namespace that are out of this kustomize package.
 # It should be run by config/default
 resources:
-- bases/vault.gobins.github.io_sysauths.yaml
-- bases/vault.gobins.github.io_policies.yaml
+- bases/vault.redoute.io_sysauths.yaml
+- bases/vault.redoute.io_policies.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 
 patchesStrategicMerge:

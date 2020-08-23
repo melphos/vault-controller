@@ -1,4 +1,4 @@
-domain: gobins.github.io
+domain: redoute.io
 repo: github.com/gobins/vault-controller
 resources:
 - group: vault

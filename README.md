@@ -20,7 +20,7 @@ data:
 ```
 ### SysAuth
 ```
-apiVersion: vault.gobins.github.io/v1
+apiVersion: vault.redoute.io/v1
 kind: SysAuth
 metadata:
   name: sysauth-sample
@@ -33,7 +33,7 @@ spec:
 
 ### Policy
 ```
-apiVersion: vault.gobins.github.io/v1
+apiVersion: vault.redoute.io/v1
 kind: Policy
 metadata:
   name: policy-sample

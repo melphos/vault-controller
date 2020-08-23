@@ -1,0 +1,11 @@
+apiVersion: vault.redoute.io/v1
+kind: Policy
+metadata:
+  name: policy-default-test
+  namespace: vault-controller-system
+spec:
+  name: default-test-controller
+  rules: |
+    path "secret/data/*" {
+        capabilities = ["list"]
+    }

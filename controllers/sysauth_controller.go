@@ -42,8 +42,8 @@ type SysAuthReconciler struct {
 	Recorder  record.EventRecorder
 }
 
-// +kubebuilder:rbac:groups=vault.gobins.github.io,resources=sysauths,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=vault.gobins.github.io,resources=sysauths/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=vault.redoute.io,resources=sysauths,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=vault.redoute.io,resources=sysauths/status,verbs=get;update;patch
 // +kubebuilder:rbac:groups=core,resources=configmaps,verbs=get;list;watch
 // +kubebuilder:rbac:groups=core,resources=events,verbs=create
 

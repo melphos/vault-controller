@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+  namespace: vault-controller-system
+data:
+  address: https://vault.security.svc.cluster.local:8200
+  token: s.X0XX0xxxxxx000XXXXXXX

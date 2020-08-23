@@ -25,7 +25,7 @@ import (
 
 const (
 	//PolicyFinalizer name of the sysauth finalizer
-	PolicyFinalizer = "sysauth.finalizers.vault.gobins.github.io"
+	PolicyFinalizer = "sysauth.finalizers.vault.redoute.io"
 	//PolicyWatchNamespace name of the namespace on which the controller is operating
 	PolicyWatchNamespace = "vault-controller-system"
 	//PolicyFailedState state when failed

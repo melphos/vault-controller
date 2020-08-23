@@ -21,7 +21,7 @@ rules:
   verbs:
   - create
 - apiGroups:
-  - vault.gobins.github.io
+  - vault.redoute.io
   resources:
   - policies
   verbs:
@@ -33,7 +33,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - vault.gobins.github.io
+  - vault.redoute.io
   resources:
   - policies/status
   verbs:
@@ -41,7 +41,7 @@ rules:
   - patch
   - update
 - apiGroups:
-  - vault.gobins.github.io
+  - vault.redoute.io
   resources:
   - sysauths
   verbs:
@@ -53,7 +53,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - vault.gobins.github.io
+  - vault.redoute.io
   resources:
   - sysauths/status
   verbs:

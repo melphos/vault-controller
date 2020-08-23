@@ -6,9 +6,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.2.5
   creationTimestamp: null
-  name: policies.vault.gobins.github.io
+  name: policies.vault.redoute.io
 spec:
-  group: vault.gobins.github.io
+  group: vault.redoute.io
   names:
     kind: Policy
     listKind: PolicyList

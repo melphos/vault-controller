@@ -1,4 +1,4 @@
-apiVersion: vault.gobins.github.io/v1
+apiVersion: vault.redoute.io/v1
 kind: Policy
 metadata:
   name: policy-sample
