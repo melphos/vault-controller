@@ -347,7 +347,7 @@ spec:
         - --enable-leader-election
         command:
         - /manager
-        image: melphos/vault-controller:1.0.2
+        image: melphos/vault-controller:1.0.3
         name: manager
         resources:
           limits:
