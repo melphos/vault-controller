@@ -1,0 +1,12 @@
+apiVersion: vault.redoute.io/v1
+kind: Role
+metadata:
+  name: role-dba-team-all
+  namespace: vault-controller-system
+spec:
+  name: dba-team-all-role-test
+  serviceAccount: dba-team-all 
+  type: kubernetes
+  namespace: dba
+  policy: 
+    - dba-team-all

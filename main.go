@@ -26,9 +26,9 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	apiv1 "github.com/gobins/vault-controller/api/v1"
-	vaultv1 "github.com/gobins/vault-controller/api/v1"
-	"github.com/gobins/vault-controller/controllers"
+	apiv1 "redoute.io/api/vault/vault-controller/api/v1"
+	vaultv1 "redoute.io/api/vault/vault-controller/api/v1"
+	"redoute.io/api/vault/vault-controller/controllers"
 	// +kubebuilder:scaffold:imports
 )
 
@@ -84,6 +84,15 @@ func main() {
 		Recorder: mgr.GetEventRecorderFor("policy-controller"),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", "Policy")
+		os.Exit(1)
+	}
+	if err = (&controllers.RoleReconciler{
+		Client:   mgr.GetClient(),
+		Log:      ctrl.Log.WithName("controllers").WithName("Role"),
+		Scheme:   mgr.GetScheme(),
+		Recorder: mgr.GetEventRecorderFor("role-controller"),
+	}).SetupWithManager(mgr); err != nil {
+		setupLog.Error(err, "unable to create controller", "controller", "Role")
 		os.Exit(1)
 	}
 	// +kubebuilder:scaffold:builder

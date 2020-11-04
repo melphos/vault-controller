@@ -4,5 +4,5 @@ metadata:
   name: config
   namespace: vault-controller-system
 data:
-  address: http://10.244.0.6:8200
-  token: root
+  address: https://vault.security.svc.cluster.local:8200
+  token: s.0HKSyTetQXFN4RftO3SUBmjK

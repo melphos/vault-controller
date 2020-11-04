@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJyZWdpc3RyeS5naXRsYWIuY29tIjp7InVzZXJuYW1lIjoidmF1bHQtY29udHJvbGxlci1naXRsYWItcmVnaXN0cnkiLCJwYXNzd29yZCI6IlJ4cW1WTmV6SnhRdGNzcUxCTlNzIiwiZW1haWwiOiJkb3NpX29wc19pbnRAcmVkb3V0ZS5jb20iLCJhdXRoIjoiZG1GMWJIUXRZMjl1ZEhKdmJHeGxjaTFuYVhSc1lXSXRjbVZuYVhOMGNuazZVbmh4YlZaT1pYcEtlRkYwWTNOeFRFSk9VM009In19fQ==
+kind: Secret
+metadata:
+  name: vault-controller-gitlab-registry
+  namespace: vault-controller-system
+type: kubernetes.io/dockerconfigjson

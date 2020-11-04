@@ -1,5 +1,5 @@
 domain: redoute.io
-repo: github.com/gobins/vault-controller
+repo: https://gitlab.com/laredoute/infra/k8s/vault-controller
 resources:
 - group: vault
   kind: SysAuth

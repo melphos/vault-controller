@@ -1,0 +1,10 @@
+apiVersion: vault.redoute.io/v1
+kind: Role
+metadata:
+  name: role-dosi-ops-int
+  namespace: vault-controller-system
+spec:
+  name: dosi_ops_int
+  type: ldap
+  policy: 
+    - admin-integration-operator

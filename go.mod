@@ -1,6 +1,6 @@
-module github.com/gobins/vault-controller
+module redoute.io/api/vault/vault-controller
 
-go 1.13
+go 1.15
 
 require (
 	github.com/go-logr/logr v0.1.0
@@ -14,3 +14,5 @@ require (
 	k8s.io/client-go v0.17.2
 	sigs.k8s.io/controller-runtime v0.5.0
 )
+
+replace redoute.io/api/vault/vault-controller => ./

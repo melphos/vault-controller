@@ -29,8 +29,8 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/gobins/vault-controller/api/v1"
 	vaultapi "github.com/hashicorp/vault/api"
+	apiv1 "redoute.io/api/vault/vault-controller/api/v1"
 )
 
 // SysAuthReconciler reconciles a SysAuth object

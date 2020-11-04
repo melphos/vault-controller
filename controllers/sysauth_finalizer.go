@@ -3,7 +3,7 @@ package controllers
 import (
 	"context"
 
-	apiv1 "github.com/gobins/vault-controller/api/v1"
+	apiv1 "redoute.io/api/vault/vault-controller/api/v1"
 )
 
 func (r *SysAuthReconciler) addFinalizer(instance *apiv1.SysAuth) error {

@@ -1,0 +1,13 @@
+apiVersion: vault.redoute.io/v1
+kind: Policy
+metadata:
+  name: policy-sec-team-all
+  namespace: vault-controller-system
+spec:
+  name: sec-team-all
+  rules: |
+    # Able to read all secrets
+    path "secret/data/*" {
+      capabilities = ["read"]
+    }
+

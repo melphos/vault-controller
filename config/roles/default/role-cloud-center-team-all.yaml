@@ -1,0 +1,10 @@
+apiVersion: vault.redoute.io/v1
+kind: Role
+metadata:
+  name: role-cloud-center-team-all
+  namespace: vault-controller-system
+spec:
+  name: dosi_ops_cloudcenter
+  type: ldap
+  policy: 
+    - admin-integration

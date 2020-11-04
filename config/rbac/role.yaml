@@ -4,7 +4,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: manager-role
+  name: vault-controller-manager-role
 rules:
 - apiGroups:
   - ""
@@ -20,10 +20,12 @@ rules:
   - events
   verbs:
   - create
+  - patch
 - apiGroups:
   - vault.redoute.io
   resources:
   - policies
+  - roles
   verbs:
   - create
   - delete
@@ -36,6 +38,7 @@ rules:
   - vault.redoute.io
   resources:
   - policies/status
+  - role/status
   verbs:
   - get
   - patch
