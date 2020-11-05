@@ -30,7 +30,9 @@ This deploy will configure all objects on Kubernetes:
   4. Create a Service
   5. Create a Deployment of vault-controller-manager
 
-# Create a Vault TOKEN to configure vault-controller-manager to connect to Vault API
+# Create a Vault Token 
+
+To configure vault-controller-manager to connect to Vault API you need to create the token inside Vault, and export it to the configMap file.
 
 `vault token create -policy=admin-integration`
 
