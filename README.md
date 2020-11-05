@@ -1,7 +1,7 @@
 # vault-controller
 A K8s controller to manage Hashicorp Vault configuration using CRDs.
 
-![VaultController](https://gitlab.com/laredoute/infra/k8s/vault-controller/-/wikis/uploads/5f2c3b62727862cf869bc9d34efd4c86/VaultController.png)
+![VaultController](./VaultController.png)
 
 ## Features:
 * Policy
